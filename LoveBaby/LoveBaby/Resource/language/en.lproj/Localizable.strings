@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  LoveBaby
+
+  Created by YUNG on 15-4-25.
+  Copyright (c) 2015年 KingYang. All rights reserved.
+*/
+"tag_Save" = "Saving Pot";
+"tag_Achieve" = "Achieve";
+"tag_Clean" = "Cleaning";
+"tag_Cook" = "Cooking";
+"tag_Wash" = "Wash dish";
+"tag_Washing" = "Washing";
