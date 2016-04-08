@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>无标题页</title>
+
+    <script type="text/javascript" src="template/js/jquery.min.js"></script>
+
+    
+
+</head>
+<body>
+ <script>
+     try {
+         //__OpenDocuments = new ActiveXObject("SharePoint.OpenDocuments.2"); //for office 2003  
+         //__OpenDocuments = new ActiveXObject("SharePoint.OpenDocuments.3"); //for office 2007
+         var oDoc;
+         try {
+             oDoc = new ActiveXObject("SharePoint.OpenDocuments.2"); //for office 2003  
+         }
+         catch (e) {
+             oDoc = new ActiveXObject("SharePoint.OpenDocuments.3"); //for office 2007  
+         }
+         oDoc.Documents.Open("http://h.siwis.cn/uploadfile/article/upload/file/20160125/1453692037210425.doc");
+         oDoc.Visible = true;
+         word.Activate(); //打开的word激活房子最前面窗口  
+         word.Documents.Open(url);  
+        
+         
+     } catch (e) {alert(e);}
+</script>
+<input type=button value="close" onclick="oDoc.Quit()">
+
+</body>
+</html>
